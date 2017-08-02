@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>SteamGuardPC</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="videocenter">
+      <iframe id="video" src="https://www.youtube.com/embed/yXfLKRD2xFg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="container-fluid main-container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <div id="form">
+                <h2 id="question">Loading...</h2>
+                <h5 id="info">Loading...</h5>
+                <div id="yesno">
+                  <div class="btn-group btn-group-lg">
+                    <button id="btn-no" type="button" class="btn btn-danger">NO</button>
+                    <button id="btn-yes" type="button" class="btn btn-success">YES</button>
+                  </div>
+                </div>
+              </div>
+              <div id="solution-container">
+                <h2>We are done!</h2>
+                <span id="solution"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
