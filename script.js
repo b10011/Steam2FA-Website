@@ -14,12 +14,12 @@ $(document).ready(function() {
         $("#question").text(obj.question);
         $("#info").text(obj.info);
     };
-	
-	let solution = {
-		sdk: "Ok, let's do this, first download Android SDK and install Android drivers with SDK downloader!<br/><br/>",
-		bluestacks: "Now go and install BlueStacks, install Steam Community app and enable Steam Guard on there!<br/><br/>",
-		commands: "As you downloaded the SDK, you should now have adb.exe. Open PowerShell window and navigate to the folder you have your adb.exe. From now on $ means a command, do not type the $ into PowerShell!<br/><br/>$ <i>.\adb.exe shell</i><br/>$ su<br/>$ cd /data/data/com.valvesoftware.android.steam.community/files<br/>$ cat * | sed 's/,/\\n/g'<br/><br/>Now you see lines of text, you should see<br/><br/>\"shared_secret\":\"qwertyuiopasdfghjklzxcvbnm\"<br/><br/>From that line you copy the <i>qwertyuiopasdfghjklzxcvbnm</i> WITHOUT the quotes!!<br/><br/>Now when you run code.jar it will ask you for the shared secret, paste it there! That's all, from now on it will work!"
-	}
+    
+    let solution = {
+        sdk: "Ok, let's do this, first download Android SDK and install Android drivers with SDK downloader!<br/><br/>",
+        bluestacks: "Now go and install BlueStacks, install Steam Community app and enable Steam Guard on there!<br/><br/>",
+        commands: "As you downloaded the SDK, you should now have adb.exe. Open PowerShell window and navigate to the folder you have your adb.exe. From now on $ means a command, do not type the $ into PowerShell!<br/><br/>$ <i>.\adb.exe shell</i><br/>$ su<br/>$ cd /data/data/com.valvesoftware.android.steam.community/files<br/>$ cat * | sed 's/,/\\n/g'<br/><br/>Now you see lines of text, you should see<br/><br/>\"shared_secret\":\"qwertyuiopasdfghjklzxcvbnm\"<br/><br/>From that line you copy the <i>qwertyuiopasdfghjklzxcvbnm</i> WITHOUT the quotes!!<br/><br/>Now when you run code.jar it will ask you for the shared secret, paste it there! That's all, from now on it will work!"
+    }
 
     // Form navigation tree
     let selection_tree = {
